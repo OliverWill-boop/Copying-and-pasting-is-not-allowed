@@ -22,6 +22,7 @@
 - 内置日志，方便定位异常
 - 仓库内直接附带可分发的 `.exe`
 - 同时保留源码和打包脚本，便于二次修改
+- 打包时自动嵌入自定义应用图标
 
 ## 工作流程
 
@@ -38,6 +39,8 @@
 |-- auto_input_gui_fixed.ps1   # 图形界面主脚本
 |-- auto_input_cli.ps1         # 命令行版本
 |-- build_exe_clean.ps1        # 打包 EXE 的脚本
+|-- assets/                    # 生成的图标资源
+|-- scripts/                   # 图标生成等辅助脚本
 |-- release/
 |   |-- AutoInputHelper.exe    # 可直接分发的成品
 |   `-- release_readme.txt
@@ -70,6 +73,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build_exe_clean.ps1
 输出文件为：
 
 `AutoInputHelper.exe`
+
+如果图标文件尚不存在，打包脚本会自动生成并嵌入它。
 
 ## 日志与排错
 

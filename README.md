@@ -22,6 +22,7 @@ It is designed for situations where you want to:
 - Runtime logging for troubleshooting
 - Standalone packaged `.exe` included in the repository
 - Source script and packaging script are both included
+- Custom app icon embedded during packaging
 
 ## How It Works
 
@@ -38,6 +39,8 @@ It is designed for situations where you want to:
 |-- auto_input_gui_fixed.ps1   # Main GUI source
 |-- auto_input_cli.ps1         # CLI helper version
 |-- build_exe_clean.ps1        # Build script for the standalone EXE
+|-- assets/                    # Generated icon assets
+|-- scripts/                   # Helper scripts such as icon generation
 |-- release/
 |   |-- AutoInputHelper.exe    # Packaged distributable
 |   `-- release_readme.txt
@@ -70,6 +73,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build_exe_clean.ps1
 The generated file will be:
 
 `AutoInputHelper.exe`
+
+If the icon asset does not exist yet, the build script generates it automatically.
 
 ## Logging and Troubleshooting
 
