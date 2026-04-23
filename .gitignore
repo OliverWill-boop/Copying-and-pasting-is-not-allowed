@@ -1,0 +1,27 @@
+# Logs
+*.log
+
+# Runtime settings
+*.settings.json
+
+# Temporary compiler artifacts
+CSC*.TMP
+
+# Local experiments and scratch files
+__*.ps1
+type_report.ps1
+auto_input_gui.ps1
+build_exe.ps1
+
+# Local packaged binary outside release/
+/AutoInputHelper.exe
+/release_readme.txt
+
+# Local helper launchers not needed in the published repo
+/启动自动输入助手.vbs
+/启动自动输入助手.cmd
+/启动自动输入助手-命令行.cmd
+
+# Release runtime leftovers
+/release/*.log
+/release/*.json
