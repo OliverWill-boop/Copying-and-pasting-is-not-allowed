@@ -104,4 +104,4 @@ A ready-to-share distributable is included in:
 
 ## License
 
-This repository currently does not include a separate license file. Add one before broader public distribution if needed.
+This project is released under the MIT License. See `LICENSE`.

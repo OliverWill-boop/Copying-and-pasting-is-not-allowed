@@ -104,4 +104,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build_exe_clean.ps1
 
 ## License
 
-当前仓库还没有单独附带许可证文件。如果后续需要更公开地分发，建议再补一个合适的 License。
+本项目采用 MIT License，详见 `LICENSE`。
